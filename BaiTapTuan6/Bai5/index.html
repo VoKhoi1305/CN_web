@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa hàng Lưu niệm - Quà tặng du lịch</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <header>
+        <h1>Cửa hàng Lưu niệm</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Trang chủ</a></li>
+                <li><a href="#products">Sản phẩm</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="intro">
+            <h2>Chào mừng đến với Cửa hàng Lưu niệm</h2>
+            <p>Chúng tôi cung cấp những sản phẩm lưu niệm độc đáo và chất lượng cao, là những quà tặng hoàn hảo cho bạn bè và gia đình.</p>
+        </section>
+
+        <section id="products">
+            <h2>Sản phẩm của chúng tôi</h2>
+            
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm...">
+                <button id="searchBtn">Tìm</button>
+            </div>
+
+            <button id="addProductBtn">Thêm sản phẩm</button>
+            
+            <div class="carousel-container">
+                <button class="carousel-btn prev">❮</button>
+                
+                <div class="carousel-wrapper">
+                    <div class="carousel-track">
+                    </div>
+                </div>
+                
+                <button class="carousel-btn next">❯</button>
+            </div>
+        </section>
+
+        <section id="addProductForm" class="hidden">
+            <h2>Thêm sản phẩm mới</h2>
+            <form id="productForm">
+                <label for="productName">Tên sản phẩm:</label>
+                <input type="text" id="productName" name="productName">
+
+                <label for="productImage">Link ảnh sản phẩm:</label>
+                <input type="url" id="productImage" name="productImage" placeholder="https://example.com/image.jpg">
+
+                <label for="productDescription">Mô tả:</label>
+                <textarea id="productDescription" name="productDescription" rows="5"></textarea>
+
+                <label for="productPrice">Giá:</label>
+                <input type="number" id="productPrice" name="productPrice" placeholder="Ví dụ: 150000">
+
+                <p id="productError" class="error-message"></p>
+
+                <button type="submit">Thêm sản phẩm</button>
+                <button type="button" id="cancelAddBtn">Hủy</button>
+            </form>
+        </section>
+
+        <section id="contact">
+            <h2>Liên hệ với chúng tôi</h2>
+            <form>
+                <label for="name">Tên của bạn:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Thông điệp:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Gửi</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Cửa hàng Lưu niệm. Địa chỉ: 1 Đại Cồ Việt </p>
+        <p>Điện thoại: 0123 456 789 | Email: info@luuniemshop.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+    </body>
+</html>

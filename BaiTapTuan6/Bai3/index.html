@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa hàng Lưu niệm - Quà tặng du lịch</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <header>
+        <h1>Cửa hàng Lưu niệm</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Trang chủ</a></li>
+                <li><a href="#products">Sản phẩm</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="intro">
+            <h2>Chào mừng đến với Cửa hàng Lưu niệm</h2>
+            <p>Chúng tôi cung cấp những sản phẩm lưu niệm độc đáo và chất lượng cao, là những quà tặng hoàn hảo cho bạn bè và gia đình.</p>
+        </section>
+
+        <section id="products">
+            <h2>Sản phẩm của chúng tôi</h2>
+            
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm...">
+                <button id="searchBtn">Tìm</button>
+            </div>
+
+            <button id="addProductBtn">Thêm sản phẩm</button>
+            
+            <div class="carousel-container">
+                <button class="carousel-btn prev">❮</button>
+                
+                <div class="carousel-wrapper">
+                    <div class="carousel-track">
+                        <article class="product-card product-item">
+                            <h3 class="product-name">Cốc sứ in hình du lịch</h3>
+                            <img src="https://tse3.mm.bing.net/th/id/OIP.Tr8uYhFo8S9sCaPGSKNXRAHaEJ?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Cốc sứ in hình du lịch">
+                            <p>Cốc sứ cao cấp với thiết kế in hình các đặc điểm nổi tiếng đặc trưng của khu du lịch. Thích hợp làm quà tặng hoặc sử dụng hàng ngày.</p>
+                            <p class="price">Giá: <strong>150.000 VNĐ</strong></p>
+                        </article>
+
+                        <article class="product-card product-item">
+                            <h3 class="product-name">Móc khóa gỗ thủ công</h3>
+                            <img src="https://th.bing.com/th/id/OIP.XR_6-KorxZ9N9mjXxShj7QHaHa?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Móc khóa gỗ thủ công">
+                            <p>Móc khóa được chế tác thủ công từ gỗ tự nhiên, có thiết kế tinh tế và bền bỉ. Mỗi sản phẩm là một tác phẩm độc nhất.</p>
+                            <p class="price">Giá: <strong>80.000 VNĐ</strong></p>
+                        </article>
+
+                        <article class="product-card product-item">
+                            <h3 class="product-name">Hộp nhạc gỗ mini</h3>
+                            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lfavy4966mbo56" alt="Hộp nhạc gỗ mini">
+                            <p>Hộp nhạc được làm từ gỗ tự nhiên, có thiết kế tinh xảo và giai điệu du dương. Món quà lưu niệm hoàn hảo để tặng bạn bè hoặc người thân.</p>
+                            <p class="price">Giá: <strong>250.000 VNĐ</strong></p>
+                        </article>
+                        
+
+                    </div>
+                </div>
+                
+                <button class="carousel-btn next">❯</button>
+            </div>
+        </section>
+
+        <section id="addProductForm" class="hidden">
+            <h2>Thêm sản phẩm mới</h2>
+            <form id="productForm">
+                <label for="productName">Tên sản phẩm:</label>
+                <input type="text" id="productName" name="productName" required>
+
+                <label for="productImage">Link ảnh sản phẩm:</label>
+                <input type="url" id="productImage" name="productImage" placeholder="https://example.com/image.jpg" required>
+
+                <label for="productDescription">Mô tả:</label>
+                <textarea id="productDescription" name="productDescription" rows="5" required></textarea>
+
+                <label for="productPrice">Giá:</label>
+                <input type="text" id="productPrice" name="productPrice" required>
+
+                <button type="submit">Thêm sản phẩm</button>
+            </form>
+        </section>
+
+        <section id="contact">
+            <h2>Liên hệ với chúng tôi</h2>
+            <form>
+                <label for="name">Tên của bạn:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Thông điệp:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Gửi</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Cửa hàng Lưu niệm. Địa chỉ: 1 Đại Cồ Việt </p>
+        <p>Điện thoại: 0123 456 789 | Email: info@luuniemshop.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+    </body>
+</html>
