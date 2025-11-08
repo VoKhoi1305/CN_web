@@ -5,7 +5,7 @@
   --white: #ffffff;
   --gray: #555;
   --border: #ffcce0;
-  --blue: #4d94ff; /* THÊM: Màu xanh cho nút Sửa */
+  --blue: #4d94ff;
   --blue-dark: #1a66cc;
 }
 
@@ -29,7 +29,7 @@ body {
   border: 2px solid var(--border);
 }
 
-/* Tiêu đề */
+
 h1 {
   color: var(--pink-dark);
   margin-bottom: 10px;
@@ -41,7 +41,7 @@ h2 {
   margin-top: 20px;
 }
 
-/* Ô input tìm kiếm */
+
 input {
   padding: 10px 14px;
   width: 80%;
@@ -57,7 +57,7 @@ input:focus {
   box-shadow: 0 0 6px rgba(255, 105, 180, 0.3);
 }
 
-/* Bảng kết quả */
+
 table {
   border-collapse: collapse;
   width: 100%;
@@ -80,18 +80,18 @@ tr:nth-child(even) {
   background-color: var(--pink-light);
 }
 
-/* Thông báo khi không tìm thấy */
+
 div {
   margin-bottom: 10px;
 }
 
-/* Hiệu ứng hover */
+
 tr:hover {
   background-color: #ffd6eb;
   transition: 0.2s;
 }
 
-/* THÊM: Style cho nút Sửa */
+
 .btn-edit {
   background-color: var(--blue);
   color: white;
@@ -111,14 +111,13 @@ tr:hover {
   box-shadow: 0 4px 8px rgba(77, 148, 255, 0.4);
 }
 
-/* Container form thêm/sửa */
 .adduser-container {
   text-align: center;
   margin-top: 20px;
   font-family: "Segoe UI", sans-serif;
 }
 
-/* Nút Thêm người dùng */
+
 .btn-add {
   background-color: #ff66b2;
   color: white;
@@ -165,7 +164,7 @@ tr:hover {
   box-shadow: 0 4px 8px rgba(255, 77, 148, 0.4);
 }
 
-/* Nút Xóa - tone hồng pastel dịu hơn nút Sửa */
+
 .btn-delete {
   background-color: #ffd6e8;
   color: #b30059;
