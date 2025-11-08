@@ -5,6 +5,8 @@
   --white: #ffffff;
   --gray: #555;
   --border: #ffcce0;
+  --blue: #4d94ff; /* THÊM: Màu xanh cho nút Sửa */
+  --blue-dark: #1a66cc;
 }
 
 body {
@@ -89,6 +91,27 @@ tr:hover {
   transition: 0.2s;
 }
 
+/* THÊM: Style cho nút Sửa */
+.btn-edit {
+  background-color: var(--blue);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 16px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 13px;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 4px rgba(77, 148, 255, 0.3);
+}
+
+.btn-edit:hover {
+  background-color: var(--blue-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(77, 148, 255, 0.4);
+}
+
+/* Container form thêm/sửa */
 .adduser-container {
   text-align: center;
   margin-top: 20px;
@@ -114,6 +137,54 @@ tr:hover {
   transform: translateY(-2px);
 }
 
+
+.btn-group {
+  display: flex;
+  align-items: center;     
+  justify-content: center; 
+  gap: 8px;                
+  margin-top: 6px;
+}
+
+.btn-edit {
+  background-color: var(--pink);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 16px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 13px;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 4px rgba(255, 126, 185, 0.3);
+}
+
+.btn-edit:hover {
+  background-color: var(--pink-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(255, 77, 148, 0.4);
+}
+
+/* Nút Xóa - tone hồng pastel dịu hơn nút Sửa */
+.btn-delete {
+  background-color: #ffd6e8;
+  color: #b30059;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 16px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 13px;
+  margin-left: 6px;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 4px rgba(255, 153, 204, 0.3);
+}
+
+.btn-delete:hover {
+  background-color: #ffb3d9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(255, 102, 178, 0.4);
+}
 /* Khung form */
 .adduser-form {
   border: 2px solid #ff66b2;

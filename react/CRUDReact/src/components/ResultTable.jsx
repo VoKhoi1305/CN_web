@@ -1,6 +1,6 @@
 import React from "react";
 
-function ResultTable({ users }) {
+function ResultTable({ users, onEdit, onDelete }) {
   return (
     <div>
       <h2>Danh Sách Người Dùng ({users.length})</h2>
@@ -16,6 +16,7 @@ function ResultTable({ users }) {
               <th>Username</th>
               <th>Email</th>
               <th>City</th>
+              <th>Hành Động</th>
             </tr>
           </thead>
           <tbody> 
@@ -27,8 +28,10 @@ function ResultTable({ users }) {
             <td>{u.email}</td> 
             <td>{u.address.city}</td> 
             <td> 
-            <button onClick={() => editUser(u)}>Sửa</button> 
-            {/* <button onClick={() => removeUser(u.id)}>Xóa</button>  */}
+            <div className="btn-group">
+            <button className="btn-edit" onClick={() => onEdit?.(u)}>Sửa</button>
+            <button className="btn-delete" onClick={() => onDelete?.(u.id)}>Xóa</button>     
+            </div>      
             </td> 
             </tr> 
             ))} 
